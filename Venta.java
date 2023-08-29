@@ -39,7 +39,7 @@ public class Venta {
         }
         return importe;
     }
-
+// Este método NO RECIBE parámetros
     public void ImprimirFactura(double importe) {
         System.out.println("Factura Nº" + nroFact + "-" + fecha);
 
@@ -50,6 +50,7 @@ public class Venta {
             System.out.println(p.desc + ".........$" + p.getPrecio() + "(" + p.toString() + ")");
 
         }
+        // en lugaar de la variable importe, deberían invocar al calcularImporte()
         System.out.println("Total a pagar:" + "$" + importe);
     }
 
