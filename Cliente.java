@@ -33,7 +33,7 @@ public class Cliente {
     public int getTelefono() {
         return telefono;
     }
-
+// Este método NO EXISTE en el diagrama
     public double HacerCompra(Producto p) {
         double precioFinal = p.CalcularPrecio();
 
