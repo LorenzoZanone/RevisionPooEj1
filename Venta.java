@@ -46,6 +46,7 @@ public class Venta {
         System.out.println("");
         System.out.println(cliente.toString());
         for (Producto p : producto) {
+            // SOLO DEBRÍAN LLAMAR AL toString()
             System.out.println(p.desc + ".........$" + p.getPrecio() + "(" + p.toString() + ")");
 
         }
