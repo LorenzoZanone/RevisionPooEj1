@@ -20,6 +20,7 @@ public class ShopOnLine {
         Venta venta = CrearVenta(cliente);
 
         HacerCompra(cliente, venta);
+        // solo deberían invocar al imprimirFactura()
         double importe = venta.calcularImporte();
         venta.ImprimirFactura(importe);
         Ingresar(ingresar);
@@ -102,6 +103,7 @@ public class ShopOnLine {
 
                     Remera remera = CrearRemera(talle, precio, desc);
                     precioFinal = cliente.HacerCompra(remera);
+                    //
                     remera.setPrecio(precioFinal);
                     venta.agregarProducto(remera);
                      {
