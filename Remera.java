@@ -16,7 +16,7 @@ public class Remera extends Producto {
         super(desc, precio);
         this.talle = talle;
     }
-
+// Este método sobra
     @Override
     public double CalcularPrecio() {
         double precioFinal = 0;
@@ -36,11 +36,13 @@ public class Remera extends Producto {
 
     @Override
     public double getPrecio() {
+        // deberían calcular el precio final aquí
         return precio;
     }
 
     @Override
     public String toString() {
+        // agregar la llamada del método toString() de la clase Padre
         return "talle:" + talle;
     }
 
